@@ -14,4 +14,15 @@
 */
 
 /* Audio Styles */
+/* Here is just basoc styles to make sure that audio elemnt is easy to see and stands out to the user. */
+audio {
+    display: block;
+    box-shadow: darkgray 8px 8px 15px;
+    margin: 20px auto;
+    width: 80%;
+}
 
+/* This applies to only the conrol panel that google supports. Google supprts webkits but safari doesnt so the two will look differntly to eaxh other. Google's will be blue while safari's will ramin gray */
+audio::-webkit-media-controls-panel {
+    background-color: rgb(128, 128, 255);
+}
