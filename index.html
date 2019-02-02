@@ -8,10 +8,10 @@
       Case Problem 4
 
       Roads not Taken 
-      Author: 
-      Date:   
+      Author: Gabriel Hernandez
+      Date: 2/1/19
 
-      Filename: rnt_poetry.html
+      Filename: index.html
 
    -->
 
@@ -20,6 +20,7 @@
 
       <link href="rnt_base.css" rel="stylesheet" />
       <link href="rnt_styles.css" rel="stylesheet" />
+      <link rel="stylesheet" href="rnt_audio.css" />
             
    </head>
 
@@ -36,7 +37,9 @@
          </nav>
       </header>
 
+      <!-- Here the iframe has a source with a link to an video from an outside source, YouTube. -->
       <figure>
+          <iframe src="http://www.youtube.com/embed/ie2Mspukx14"></iframe>
          <figcaption>Robert Frost reads <cite>The Road Not Taken</cite></figcaption>
       </figure>
 
@@ -71,6 +74,14 @@
          <section class="poem">
             <h2>Fire and Ice</h2>
 
+            <!-- Here the user can use the controls (ex: pause, play, volume, etc.) for to audio sourcec that are directly in the website. The two sources are so that different broswers/operating system can play the video without plug-ins. The embed element with the audio file is just inaces a user is using a plug in already.-->
+            <audio controls>
+                <source src="rnt_fireice.mp3" />
+                <source src="rnt_fireice.ogg" />
+                <p>Your broswer does not support HTML5, if you would like to listen to the audio please update your browser to meet these needs.</p>
+                <embed src="rnt_fireice.mp3" type="audio/mp3" width="250px" height="50px" controller autoplay showcontrols autostart/>
+            </audio>
+
             <p>
                Some say the world will end in fire,<br />
                Some say in ice.<br />
@@ -86,6 +97,14 @@
 
          <section class="poem">
             <h2>Devotion</h2>
+
+            <!-- Here is was able to to copy and past the code from the previous audio element making sure to change the audio files. -->
+            <audio controls>
+                <source src="rnt_devotion.mp3" />
+                <source src="rnt_devotion.ogg" />
+                <p>Your broswer does not support HTML5, if you would like to listen to the audio please update your browser to meet these needs.</p>
+                <embed src="rnt_devotion.mp3" type="audio/mp3" width="250px" height="50px" controller autoplay showcontrols autostart/>
+             </audio>
 
             <p>
                The heart can think of no devotion<br />
